@@ -1,0 +1,313 @@
+```html
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Кононов Арсеній — футбольний тренер</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0b0b;
+            color: white;
+        }
+
+        /* ГОЛОВНИЙ ЕКРАН */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.65),
+                    rgba(0,0,0,0.9)
+                );
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .ball {
+            font-size: 70px;
+        }
+
+        h1 {
+            font-size: 56px;
+            margin: 20px 0 10px;
+        }
+
+        .subtitle {
+            font-size: 26px;
+            color: #4caf50;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 1.7;
+            color: #cccccc;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 30px;
+            background: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #43a047;
+        }
+
+        /* СЕКЦІЇ */
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #171717;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .skill {
+            background: #171717;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* ФУТЕР */
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #050505;
+            color: #888;
+        }
+
+        /* ТЕЛЕФОН */
+
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .subtitle {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ГОЛОВНИЙ ЕКРАН -->
+
+    <div class="hero">
+
+        <div class="hero-content">
+
+            <div class="ball">⚽</div>
+
+            <h1>Кононов Арсеній</h1>
+
+            <div class="subtitle">
+                Футбольний тренер
+            </div>
+
+            <p>
+                Розвиваю гравців, формую командний дух
+                та допомагаю досягати нових цілей через футбол.
+            </p>
+
+            <a class="button" href="#about">
+                Дізнатися більше
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ПРО МЕНЕ -->
+
+    <section id="about">
+
+        <h2>Про мене</h2>
+
+        <div class="card">
+
+            <p>
+                Мене звати Кононов Арсеній.
+                Я футбольний тренер, який прагне
+                розвивати гравців та допомагати їм
+                ставати кращою версією себе.
+            </p>
+
+            <p>
+                У своїй роботі я приділяю увагу
+                технічній підготовці, тактичному мисленню,
+                фізичним якостям, дисципліні та командній роботі.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ТРЕНЕРСЬКА ФІЛОСОФІЯ -->
+
+    <section>
+
+        <h2>Моя тренерська філософія</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                ⚽ Технічна підготовка
+            </div>
+
+            <div class="skill">
+                🧠 Тактичне мислення
+            </div>
+
+            <div class="skill">
+                💪 Фізична підготовка
+            </div>
+
+            <div class="skill">
+                🤝 Командна робота
+            </div>
+
+            <div class="skill">
+                🎯 Індивідуальний розвиток
+            </div>
+
+            <div class="skill">
+                🏆 Прагнення до результату
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ДОСВІД -->
+
+    <section>
+
+        <h2>Мій досвід</h2>
+
+        <div class="card">
+
+            <p>
+                Тут буде інформація про мій тренерський
+                досвід, команди, з якими я працював,
+                та футбольні проєкти.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ДОСЯГНЕННЯ -->
+
+    <section>
+
+        <h2>Досягнення</h2>
+
+        <div class="card">
+
+            <p>
+                Тут будуть представлені мої футбольні
+                та тренерські досягнення.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- КОНТАКТИ -->
+
+    <section>
+
+        <h2>Контакти</h2>
+
+        <div class="card">
+
+            <p>
+                Якщо ви хочете дізнатися більше
+                про мою тренерську діяльність —
+                зв'яжіться зі мною.
+            </p>
+
+            <a class="button" href="https://t.me/">
+                Telegram
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ФУТЕР -->
+
+    <footer>
+
+        © 2026 Кононов Арсеній — Футбольний тренер
+
+    </footer>
+
+</body>
+</html>
+```
